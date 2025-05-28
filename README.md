@@ -125,7 +125,8 @@ if (isset($_GET['page'])) {
 ?>
 ```
 
-![ảnh|500](2025-03-15_18-47.png)
+![1](https://github.com/user-attachments/assets/8b7b1fda-dd8d-42fc-a117-63d10cc5074b)
+
 ##### 1.2 Folder./Page chứa một số 02 files php (about.php, **upload.php**)
 
 - File about.php sẽ xem thông tin của tác giả 
@@ -137,7 +138,7 @@ echo "<p>Tác giả: Nguyễn Văn A</p>";
 ?>
 ```
 
-![ảnh|500](2025-03-15_18-48.png)
+![2](https://github.com/user-attachments/assets/81ef8aa7-b3f7-4874-b9d0-7124f2e45a89)
 
 - File upload.php dùng để tải file lên và có mắc lỗi **_Unsafe File Upload_**
 ```js
@@ -174,7 +175,7 @@ echo "</ul>";
 </form>
 ```
 
-![ảnh|500](2025-03-15_18-48_1.png)
+![3](https://github.com/user-attachments/assets/1906a239-e8e6-4c41-9a58-60bf323f6b7d)
 
 ##### 1.3 Webroot có thêm 2 files: **index_fixed.php**, **upload_fixed.php**
 
@@ -300,11 +301,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 - Bởi vì trang web không kiểm tra đầu vào nên chúng ta có thể cho vào file PHP vào hệ thống. 
 - Trong file chứa các hàm độc hại như **system()** có thể tác động lên hệ thống 
 
-![ảnh|500](2025-03-15_18-54.png)
+![4](https://github.com/user-attachments/assets/61735269-771e-49f5-9add-99dcc384a4a3)
 
 Kết quả do hàm **system()** trả về là 
 
-![ảnh|500](2025-05-28_14-41.png)
+![5](https://github.com/user-attachments/assets/f3f8ab55-11db-4b2e-8b0d-6549a8217633)
+
 ### 2. LFI
 
 - Đây là lỗi ở phần index.php
@@ -313,7 +315,7 @@ Kết quả do hàm **system()** trả về là
 `windows/win.ini` là **tệp cấu hình hệ thống** cũ của Windows, được sử dụng trong các phiên bản Windows trước đây (Windows 95, 98, ME) để lưu trữ cài đặt hệ thống và ứng dụng.
 Chúng ta thử dùng LFI để đọc nội dung
 
-![ảnh|500](2025-03-15_19-18.png)
+![6](https://github.com/user-attachments/assets/a9fcf83e-b19d-4e16-8e96-fc255f016d51)
 
 ---
 
